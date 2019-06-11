@@ -464,11 +464,11 @@ textarea {
 body {
   font-family: sans-serif;
   color: #58402c;
+  background-size: cover;
 }
 
 .container {
   width: 90%;
-  margin: 0 auto;
 }
 
 .container:after {
@@ -478,12 +478,30 @@ body {
 }
 
 .container_2 {
+  width: 50%;
+  margin: 50px auto;
+}
+
+.container_2:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.container_3 {
   width: 70%;
   margin: 0 auto;
 }
 
+.container_3:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
 header {
   height: 50px;
+  margin: 0 auto;
 }
 
 header .left-navbar {
@@ -526,7 +544,12 @@ hr {
 }
 
 .sub-header {
+  margin: 50px 0;
   padding: 20px 40px;
+}
+
+.sub-header .container {
+  margin: 0 auto;
 }
 
 .sub-header .col-6 {
@@ -551,7 +574,7 @@ hr {
 .sub-header .col-6 p {
   margin: 30px 0;
   font-size: 20px;
-  line-height: 40px;
+  line-height: 35px;
 }
 
 .sub-header .col-6 img {
@@ -560,5 +583,99 @@ hr {
 
 .sub-header .col-6 span {
   padding: 0 30px;
+}
+
+.pink {
+  background-color: #ffe7d2;
+  padding: 60px 0;
+}
+
+.pink .container_2 h3 {
+  margin: 50px auto;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 35px;
+}
+
+.pink .container_3 {
+  margin-top: 30px;
+}
+
+.pink .container_3 .col-4 {
+  float: left;
+  width: 15%;
+  margin: 0 9%;
+}
+
+.pink .container_3 .col-4 img {
+  width: 100%;
+  text-align: center;
+}
+
+.pink .container_3 .col-4 p {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.pink .container_flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pink .container_flex img {
+  width: 25%;
+  margin-top: 30px;
+}
+
+.pink hr {
+  margin-top: 50px;
+}
+
+.due {
+  padding: 60px 0;
+}
+
+.due .col-6 {
+  width: 50%;
+  float: left;
+}
+
+.due .col-6 img {
+  width: 100%;
+}
+
+.due .col-5 {
+  width: 35%;
+  float: left;
+}
+
+.due .col-5 h3 {
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 35px;
+}
+
+.due .col-5 p {
+  font-size: 20px;
+  line-height: 35px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.due .col-5 a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.due .col-5 img {
+  width: 80%;
+  margin-top: 30px;
+}
+
+.due .right {
+  margin-left: 15%;
+  margin-top: 60px;
 }
 

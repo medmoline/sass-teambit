@@ -1,0 +1,47 @@
+.due{
+  padding:$padding_section;
+
+  .col-6{
+    @include width(50%);
+    @include float;
+
+    img{
+        @include width(100%);
+      }
+  }
+  .col-5{
+    @include width(35%);
+    @include float;
+
+      h3{
+        @include font-size(26px);
+        font-weight: bold;
+        line-height: $general_line_height;
+      }
+
+      p{
+        @include font-size(20px);
+        line-height: $general_line_height;
+        margin-top:$general_mrg_top;
+        margin-bottom :$general_mrg_top;
+      }
+
+    a{
+      text-decoration:none;
+      @include font-size(20px);
+      }
+
+    img{
+      @include width(80%);
+      margin-top:$general_mrg_top;
+      }
+  }
+
+  .right{
+    margin-left:15%;
+    margin-top: 60px;
+  }
+
+
+
+}

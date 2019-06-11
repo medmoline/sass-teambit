@@ -1,5 +1,6 @@
 header{
   height:$header_height;
+  margin:0 auto;
 
   .left-navbar{
     @include float;

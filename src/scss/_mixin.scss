@@ -7,7 +7,7 @@
   float:left;
 }
 
-@mixin my-navbar-li{ 
+@mixin my-navbar-li{
   padding:0 10px;
   display: inline-block;
 }
@@ -27,4 +27,14 @@
 
 @mixin font-size($number){
   font-size: $number;
+}
+
+@mixin my-center-flex{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+@mixin mrg_top($mt){
+  margin-top:$mt;
 }

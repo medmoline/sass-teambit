@@ -1,0 +1,46 @@
+.pink{
+  background-color:$colore_sezione;
+  padding:$padding_section;
+
+  .container_2{
+    h3{
+      margin: 50px auto;
+      text-align: center;
+      @include font-size(26px);
+      font-weight: bold;
+      line-height: $general_line_height;
+    }
+  }
+
+  .container_3{
+    @include mrg_top(30px);
+    .col-4{
+      @include float;
+      @include width(15%);
+      margin:0 9%;
+
+        img{
+          width:100%;
+          text-align: center;
+        }
+
+        p{
+          padding:10px 0;
+          text-align: center;
+        }
+    }
+  }
+
+  .container_flex{
+    @include my-center-flex;
+    img{
+        @include width(25%);
+        @include mrg_top(30px);
+      }
+  }
+
+  hr{
+    @include mrg_top(50px);
+  }
+
+}
