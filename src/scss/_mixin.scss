@@ -1,16 +1,30 @@
 @mixin my-nav{
-  float:left;
   width:50%;
-  line-height: 50px;
+  line-height: $header_height;
 }
 
-@mixin my-navbar-li{
-  font-size: 20px;
+@mixin float{
+  float:left;
+}
+
+@mixin my-navbar-li{ 
   padding:0 10px;
   display: inline-block;
 }
 
 @mixin my-navbar-a{
   text-decoration: none;
-  color: black;
+  font-weight:bold;
+}
+
+@mixin border-radius($radius){
+  border-radius: $radius;
+}
+
+@mixin width($percentuale){
+  width:$percentuale;
+}
+
+@mixin font-size($number){
+  font-size: $number;
 }

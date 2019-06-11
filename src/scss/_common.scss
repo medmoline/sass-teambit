@@ -1,4 +1,20 @@
+body{
+  font-family: sans-serif;
+  color:$color;
+}
+
 .container {
   width:90%;
+  margin:0 auto;
+
+  &:after{
+    display:table;
+    content: '';
+    clear:both;
+  }
+}
+
+.container_2{
+  width:70%;
   margin:0 auto;
 }

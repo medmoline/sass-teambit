@@ -461,20 +461,29 @@ textarea {
   padding: 0.2em 0;
 }
 
+body {
+  font-family: sans-serif;
+  color: #58402c;
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
 }
 
-header {
-  height: 50px;
-  border: 1px solid black;
-}
-
-header:after {
+.container:after {
   display: table;
   content: "";
   clear: both;
+}
+
+.container_2 {
+  width: 70%;
+  margin: 0 auto;
+}
+
+header {
+  height: 50px;
 }
 
 header .left-navbar {
@@ -491,17 +500,65 @@ header .right-navbar {
 }
 
 header li {
-  font-size: 20px;
+  font-size: 15px;
   padding: 0 10px;
   display: inline-block;
 }
 
-header a {
+header li a {
   text-decoration: none;
-  color: black;
+  font-weight: bold;
 }
 
-.pink {
-  background-color: #ffe7d2;
+header li a:hover {
+  color: blue;
+}
+
+header li button {
+  padding: 5px;
+  color: blue;
+  background-color: white;
+  border-radius: 5px;
+}
+
+hr {
+  width: 90%;
+}
+
+.sub-header {
+  padding: 20px 40px;
+}
+
+.sub-header .col-6 {
+  float: left;
+  width: 45%;
+}
+
+.sub-header .col-6:first-child {
+  width: 50%;
+}
+
+.sub-header .col-6:last-child {
+  margin-left: 5%;
+}
+
+.sub-header .col-6 h1 {
+  font-size: 45px;
+  line-height: 80px;
+  font-weight: bold;
+}
+
+.sub-header .col-6 p {
+  margin: 30px 0;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.sub-header .col-6 img {
+  width: 100%;
+}
+
+.sub-header .col-6 span {
+  padding: 0 30px;
 }
 

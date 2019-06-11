@@ -1,28 +1,40 @@
 header{
-  height:50px;
-  border:1px solid black;
-
-  &:after{
-    display:table;
-    content: '';
-    clear:both;
-  }
+  height:$header_height;
 
   .left-navbar{
+    @include float;
     @include my-nav;
 
   }
 
   .right-navbar{
+    @include float;
     @include my-nav;
     text-align: right;
   }
 
   li{
-    @include my-navbar-li
-  }
+    @include font-size(15px);
+    @include my-navbar-li;
 
-  a{
-  @include my-navbar-a
+
+    a{
+      @include my-navbar-a;
+
+      &:hover{
+        color:blue;
+      }
+    }
+
+    button{
+      padding:5px;
+      color:blue;
+      background-color:white;
+      @include border-radius(5px);
+    }
   }
+}
+
+hr{
+  @include width(90%);
 }
