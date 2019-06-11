@@ -1,0 +1,28 @@
+header{
+  height:50px;
+  border:1px solid black;
+
+  &:after{
+    display:table;
+    content: '';
+    clear:both;
+  }
+
+  .left-navbar{
+    @include my-nav;
+
+  }
+
+  .right-navbar{
+    @include my-nav;
+    text-align: right;
+  }
+
+  li{
+    @include my-navbar-li
+  }
+
+  a{
+  @include my-navbar-a
+  }
+}

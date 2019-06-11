@@ -1,0 +1,16 @@
+@mixin my-nav{
+  float:left;
+  width:50%;
+  line-height: 50px;
+}
+
+@mixin my-navbar-li{
+  font-size: 20px;
+  padding:0 10px;
+  display: inline-block;
+}
+
+@mixin my-navbar-a{
+  text-decoration: none;
+  color: black;
+}
